@@ -1,0 +1,2 @@
+rootProject.name = "Clean_Messy_Predictor"
+include ':app'
