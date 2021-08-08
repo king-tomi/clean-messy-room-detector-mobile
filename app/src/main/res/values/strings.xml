@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Clean_Messy_Predictor</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="check">check</string>
+    <string name="input_image">Input Image</string>
+    <string name="is_the_room_messy_or_clean_know_by_picking_an_image_and_check">Is the room messy or clean? know by picking an image and check</string>
+    <string name="hello_welcome_to_the_clean_and_messy_room_predictor">Hello! Welcome to the Clean and Messy Room Predictor</string>
+</resources>
