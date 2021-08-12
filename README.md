@@ -1,4 +1,4 @@
-# clean-messy-room-predictor-mobile
+# clean-messy-room-detector-mobile
 
 ## HI! This app allows to differnetiate between a messy room and a clean one
 
