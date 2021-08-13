@@ -1,6 +1,6 @@
 package com.ayotomisin.clean_messy_predictor;
 
-import android.opengl.Matrix;
+import android.graphics.Matrix;
 
 public class Predictor {
 

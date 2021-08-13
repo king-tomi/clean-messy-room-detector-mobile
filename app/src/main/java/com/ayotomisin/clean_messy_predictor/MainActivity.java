@@ -1,25 +1,23 @@
 package com.ayotomisin.clean_messy_predictor;
 
+import android.content.Intent;
 import android.graphics.Matrix;
-import android.media.Image;
 import android.os.Bundle;
 
 import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import com.ayotomisin.clean_messy_predictor.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,22 +30,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        setContentView(R.layout.activity_main);
 
         setSupportActionBar(binding.appBarLayout);
+        Button make_new = findViewById(R.id.detect);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-
-        binding.appBarLayout.setOnClickListener(new View.OnClickListener() {
+        make_new.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                ImageView input = findViewById(R.id.input_image);
-                Matrix image = input.getImageMatrix();
-
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ImagePredictActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -79,8 +71,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
+//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+//        return NavigationUI.navigateUp(navController, appBarConfiguration)
+//                || super.onSupportNavigateUp();
+        return true;
     }
 }

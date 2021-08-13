@@ -13,4 +13,10 @@
     <string name="input_image">Input Image</string>
     <string name="is_the_room_messy_or_clean_know_by_picking_an_image_and_check">Is the room messy or clean? know by picking an image and check</string>
     <string name="hello_welcome_to_the_clean_and_messy_room_predictor">Hello! Welcome to the Clean and Messy Room Predictor</string>
+    <string name="title_activity_image_predict">ImagePredictActivity</string>
+    <string name="input">Input</string>
+    <string name="make_new_detection">make new detection</string>
+    <string name="clean_messy_detector">Clean Messy Room Detector</string>
+    <string name="new_detection">New Detection</string>
+    <string name="upload_room_image">upload_room_image</string>
 </resources>
