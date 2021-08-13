@@ -10,8 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Clean_Messy_Predictor">
         <activity
+            android:name=".ImagePredictActivity"
+            android:label="@string/new_detection"
+            android:theme="@style/Theme.Clean_Messy_Predictor.NoActionBar">
+        </activity>
+        <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:label="@string/clean_messy_detector"
             android:theme="@style/Theme.Clean_Messy_Predictor.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
